@@ -6,7 +6,7 @@ const app = express();
 
 app.get('/', (req, res) => {
     res.json({
-        message: 'Sucessfully deployed cicd pipeline with argocd helm and jenkins !!!'
+        message: 'Sucessfully deployed cicd pipeline with argocd helm and jenkins !!!!'
     });
 
 
