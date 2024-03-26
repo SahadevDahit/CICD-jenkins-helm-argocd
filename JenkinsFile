@@ -11,14 +11,14 @@ pipeline {
             steps {
                 // Checkout the source code from your Git repository
                 git branch: 'main',
-                url: 'https://github.com/SahadevDahit/cicd-jenkins.git'
+                url: 'https://github.com/SahadevDahit/CICI-jenkins-helm-argocd.git'
             }
         }
  
         stage('Remove All Previous Docker Images') {
             steps {
                 // Remove all Docker images
-                sh 'docker rmi $(docker images -a -q) || true'
+                sh 'docker rmi -f $(docker images -a -q) || true'
             }
         }
 
